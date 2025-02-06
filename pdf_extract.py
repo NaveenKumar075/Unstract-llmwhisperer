@@ -7,7 +7,7 @@ load_dotenv()
 url = "https://llmwhisperer-api.unstract.com/v1/whisper"
 headers = {
     "Content-Type": "application/octet-stream",
-    "unstract-key": f"{os.getenv('UNSTRACT_API_KEY')}"
+    "unstract-key": f"{os.getenv('UNSTRACT_API_KEY')}" # Primary Key
 }
 
 params = {
@@ -27,7 +27,7 @@ print(response.text) # Printing the extracted texts!
 url = "https://llmwhisperer-api.unstract.com/v1/highlight-data"
 headers = {
     "Content-Type": "text/plain",
-    "unstract-key": f"{os.getenv('UNSTRACT_API_KEY')}"
+    "unstract-key": f"{os.getenv('UNSTRACT_API_KEY')}" # Primary Key
 }
 
 params = {
